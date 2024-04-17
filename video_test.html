@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>video js</title>
+        <!-- <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video-js.min.css"
+            rel="stylesheet"
+        /> -->
+
+        <link
+            href="https://vjs.zencdn.net/8.10.0/video-js.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- 测试源 -->
+        <!-- https://www.cnblogs.com/jiangbeixiaoqiao/p/17851437.html -->
+        <!-- https://sample-videos.com/index.php#sample-flv-video -->
+        <div>MP4</div>
+        <video
+            id="amor_mp4"
+            class="video-js vjs-default-skin"
+            controls
+            preload="none"
+            width="640"
+            height="360"
+            playsinline
+            webkit-playsinline
+        >
+            <!-- poster="http://vjs.zencdn.net/v/oceans.png" -->
+            <source
+                src="https://media.w3.org/2010/05/sintel/trailer.mp4"
+                type="video/mp4"
+            />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                    >supports HTML5 video</a
+                >
+            </p>
+        </video>
+        <div>3gp</div>
+        <div>3gp 格式的视频没办法播放</div>
+        <video
+            id="amor_3gp"
+            class="video-js vjs-default-skin"
+            controls
+            preload="none"
+            width="640"
+            height="360"
+            playsinline
+            webkit-playsinline
+        >
+            <source
+                src="https://sample-videos.com/video321/3gp/144/big_buck_bunny_144p_1mb.3gp"
+                type="video/3gpp"
+            />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                    >supports HTML5 video</a
+                >
+            </p>
+        </video>
+
+        <div>mkv</div>
+        <div>mkv 只有声音，没有影响</div>
+        <video
+            id="amor_mkv"
+            class="video-js vjs-default-skin"
+            controls
+            preload="none"
+            width="640"
+            height="360"
+            playsinline
+            webkit-playsinline
+        >
+            <source
+                src="https://sample-videos.com/video321/mkv/720/big_buck_bunny_720p_1mb.mkv"
+                type="video/webm"
+            />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                    >supports HTML5 video</a
+                >
+            </p>
+        </video>
+
+        <div>flv</div>
+        <div>flv 格式的视频没办法播放,链接会自动下载？</div>
+        <video
+            id="amor_flv"
+            class="video-js vjs-default-skin"
+            controls
+            preload="none"
+            width="640"
+            height="360"
+            playsinline
+            webkit-playsinline
+        >
+            <source
+                src="https://sample-videos.com/video321/flv/720/big_buck_bunny_720p_1mb.flv"
+                type="video/x-flv"
+            />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                    >supports HTML5 video</a
+                >
+            </p>
+        </video>
+
+        <!-- <div>m3u8</div>
+        <video
+            id="amor_m3u8"
+            class="video-js vjs-default-skin"
+            controls
+            preload="none"
+            width="640"
+            height="360"
+        >
+            <source
+                src="http://devimages.apple.com/iphone/samples/bipbop/gear1/prog_index.m3u8"
+                type="application/vnd.apple.mpegurl"
+            />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                    >supports HTML5 video</a
+                >
+            </p>
+        </video> -->
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js"></script> -->
+        <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+        <script src="./video_test.js"></script>
+    </body>
+</html>
